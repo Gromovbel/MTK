@@ -88,7 +88,7 @@
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat']; ?>
                     <?php if($type_meat == 'chicken') : ?>
-                        <div class="catalog_item col-md-4">
+                        <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                             <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                             <div class="catalog_item_img">
@@ -117,7 +117,7 @@
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat']; ?>
                     <?php if($type_meat == 'beef') : ?>
-                        <div class="catalog_item col-md-4">
+                        <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                             <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                             <div class="catalog_item_img">

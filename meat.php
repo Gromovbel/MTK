@@ -87,14 +87,14 @@
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat']; ?>
                     <?php if($type_meat == 'chicken') : ?>
-                        <div class="catalog_item col-md-4">
+                        <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                             <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                             <div class="catalog_item_img">
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3" data-counter>
+                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-xs-1 offset-xs-4" data-counter>
                                     <div class="counter__button counter__button_minus">-</div>
                                     <div class="counter__input"><input type="number" placeholder="0"></div>
                                     <div class="counter__button counter__button_plus">+</div>
@@ -117,14 +117,14 @@
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat'];?>
                     <?php if($type_meat == 'beef') : ?>
-                        <div class="catalog_item col-md-4">
+                        <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                             <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                             <div class="catalog_item_img">
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3" data-counter>
+                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-xs-1 offset-xs-4" data-counter>
                                     <div class="counter__button counter__button_minus">-</div>
                                     <div class="counter__input"><input type="number" placeholder="0"></div>
                                     <div class="counter__button counter__button_plus">+</div>
@@ -147,14 +147,14 @@
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat'];?>
                     <?php if($type_meat == 'pork') : ?>
-                        <div class="catalog_item col-md-4">
+                        <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                             <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                             <div class="catalog_item_img">
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3" data-counter>
+                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-xs-1 offset-xs-4" data-counter>
                                     <div class="counter__button counter__button_minus">-</div>
                                     <div class="counter__input"><input type="number" placeholder="0"></div>
                                     <div class="counter__button counter__button_plus">+</div>
