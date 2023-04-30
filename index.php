@@ -52,7 +52,7 @@
 
     <section class="advantages">
         <div class="container">
-            <diva class="row">
+            <div class="row">
                 <div class="advantages_info">
                     <div class="advantages_info_title">Наши преимущества</div>
                     </div>

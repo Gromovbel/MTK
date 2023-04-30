@@ -189,6 +189,8 @@ nav .basket img {
     font-size: 18px;
     margin-bottom: 30px;
     margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .catalog_btn a:hover {
@@ -306,5 +308,46 @@ input[type="number"]:focus {
 	text-align: center;
   }
 
+/* Media */
 
+@media (max-width: 1199px) {
+    .promo_ad_text {
+        font-size: 80px;
+    }
+}
 
+@media (max-width: 991px) {
+    .promo_ad_text {
+        margin-top: 60px;
+    }
+
+    .catalog_item .button {
+        width: 12%;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo_ad_text {
+        font-size: 60px;
+    }
+
+    .promo {
+        min-height: 80vh;
+        padding-top: 30px;
+    }
+
+    .catalog_item .button {
+        width: 8%;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo_ad_text {
+        font-size: 60px;
+    }
+
+    .promo {
+        min-height: 80vh;
+        padding-top: 30px;
+    }
+}

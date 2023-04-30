@@ -58,35 +58,35 @@
 
     <!-- Catalog -->
     <section class="catalog">
-        <div class="container">
+        <div class="container"> 
             <div class="row">
                 <div class="catalog_title">
                     <h2>Фрукты</h2>
                 </div>
                 <hr>
-                    <div class="catalog_btn col-md-2 offset-md-2">
+                    <div class="catalog_btn col-md-4 offset-md-2 col-lg-2 offset-lg-2 col-4 offset-2">
                         <a href="fruits.php">Фрукты</a>
                     </div>
-                    <div class="catalog_btn col-md-2">
+                    <div class="catalog_btn col-md-4 col-lg-2 offset-lg-0 col-4">
                         <a href="vegetables.php">Овощи</a>
                     </div>
-                    <div class="catalog_btn col-md-2">
+                    <div class="catalog_btn col-md-4 offset-md-2 col-lg-2 offset-lg-0 col-4 offset-2">
                         <a href="meat.php">Мясо</a>
                     </div>
-                    <div class="catalog_btn col-md-2">
+                    <div class="catalog_btn col-md-4 col-lg-2 offset-lg-0 col-4">
                         <a href="subproducts.php">Субпродукты</a>
                     </div>
                     <hr>
 
             <?php while ($row = mysqli_fetch_assoc($query)): ?>
-                <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-12">
                     <div class="catalog_item_title"><?php echo $row['name'] ?></div>
                     <div class="catalog_item_price"><?php echo $row['price'] ?> рублей\кг</div>
                     <div class="catalog_item_img">
                         <img src="<?=$row['img']?>">
                     </div>
                     <div class="catalog_block">
-                        <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-xs-1 offset-xs-4" data-counter>
+                        <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
                             <div class="counter__button counter__button_minus">-</div>
                             <div class="counter__input"><input type="number" placeholder="0"></div>
                             <div class="counter__button counter__button_plus">+</div>
