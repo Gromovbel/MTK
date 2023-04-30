@@ -112,9 +112,10 @@ nav .basket img {
 /* Section advantages */
 
 .advantages {
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     padding-top: 60px;
     background: url(/images/bg/about_bg.png) center/cover no-repeat;
+    font-family: "YesevaOneRegular";
 }
 
 .advantages_info {
@@ -123,12 +124,25 @@ nav .basket img {
 
 .advantages_info_title {
     font-size: 50px;
-    font-family: "YesevaOneRegular";
     font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.advantages_item {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.advantages_item_title {
+    font-size: 22px;
+}
+
+.advantages_item_text {
+    font-size: 15px;
 }
 
 .advantages_info_btn {
-    padding-top: 20px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items:center;

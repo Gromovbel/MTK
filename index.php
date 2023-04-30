@@ -52,23 +52,46 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="row">
+            <diva class="row">
                 <div class="advantages_info">
                     <div class="advantages_info_title">Наши преимущества</div>
-
-                    <div class="advantages_info_text">
-                        <p>ООО "МТК" - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МТК"</p>
-
-                        <div class="advantages_advantages">
-                            
-                        </div>
-                        <p></p>
                     </div>
+                    <hr>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Удобство покупки</div>
+                                <div class="advantages_item_text"> Пользователи могут сделать заказ, не выходя из дома, 
+                                    что экономит время и силы</div>
+                            </div>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Круглосуточная доступность</div>
+                                <div class="advantages_item_text"> Cайт работает 24/7, что позволяет клиентам заказывать товары в любое удобное для них время</div>
+                            </div>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Широкий ассортимент продуктов</div>
+                                <div class="advantages_item_text">  На сайте большое количество товаров, что дает клиентам широкий выбор продукции</div>
+                            </div>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Быстрое оформление заказа</div>
+                                <div class="advantages_item_text">  Сайт может предоставить возможность формирования быстрого заказа без необходимости регистрации пользователя</div>
+                            </div>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Долгое время работы компании</div>
+                                <div class="advantages_item_text"> Компания зарегистрирована 9 лет назад, что говорит о стабильной деятельности и поднадзорности государственным органам</div>
+                            </div>
+
+                            <div class="advantages_item col-md-6">
+                                <div class="advantages_item_title">Участник системы госзакупок — поставщик</div>
+                                <div class="advantages_item_text"> Компания поставила товаров или оказала услуг на сумму более 7,5 млн руб</div>
+                            </div>
 
                     <div class="advantages_info_btn">
                             <a href="about.php">Подробнее</a>
                     </div>
-                </div>
                 
             </div>
         </div>

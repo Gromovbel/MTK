@@ -93,7 +93,7 @@
                         </div>
                             <div class="button col-md-4"><a href="#"><img src="/images/icons/basket.png" alt=""></a></div>
                         </div>  
-            </div>
+                </div>
             <?php endwhile; ?>
 
             </div>
