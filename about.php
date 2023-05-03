@@ -35,18 +35,19 @@
         </nav>
     </header>
 
+    <!-- Section about -->
+
     <section class="about">
         <div class="container">
             <div class="row">
                 <div class="about_info">
-                    <div class="about_info_title">О нас</div>
+                    <div class="about_info_title">OOO " MTK " - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МТК"</div>
+                    <hr>
+
+                    <div class="about_main_activity">Наша компания занимается торговлей мясом, субпродуктов, овощей и фруктов.</div>
 
                     <div class="about_info_text">
                         <p></p>
-                    </div>
-
-                    <div class="about_info_btn">
-                            <a href="about.php">Подробнее</a>
                     </div>
                 </div>
                 

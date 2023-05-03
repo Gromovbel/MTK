@@ -56,7 +56,7 @@
         </nav>
     </header>
 
-    <!-- Catalog -->
+    <!-- Section catalog -->
     <section class="catalog">
         <div class="container"> 
             <div class="row">
@@ -77,6 +77,8 @@
                         <a href="subproducts.php">Субпродукты</a>
                     </div>
                     <hr>
+
+            <!-- Код карточки товара -->
 
             <?php while ($row = mysqli_fetch_assoc($query)): ?>
                 <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-12">

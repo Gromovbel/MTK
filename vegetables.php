@@ -78,6 +78,8 @@
                     </div>
                     <hr>
 
+                    <!-- Код карточки товара -->
+
                     <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <div class="catalog_item col-xl-4 col-md-6 col-sm-12 col-12 ">
                     <div class="catalog_item_title"><?php echo $row['name'] ?></div>

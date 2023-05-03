@@ -84,6 +84,8 @@
                     <hr>
                 </div>
 
+                <!-- Код карточки товара -->
+
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat']; ?>
                     <?php if($type_meat == 'chicken') : ?>
