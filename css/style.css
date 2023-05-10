@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Garamond';
 }
 
 li {
@@ -26,6 +26,7 @@ header {
 nav {
     width: 100%;
     height: 70px;
+    font-size: 20px;
     margin: 0 auto;
     position: fixed;
     display: flex;
@@ -64,6 +65,18 @@ nav .basket img {
     height: 100%;
 }
 
+nav .dropdown {
+    display: none;
+}
+
+nav .dropdown .btn{
+    font-size: 20px;
+}
+
+nav .dropdown .btn:focus{
+    box-shadow: none;
+}
+
 /* Section promo */
 
 .promo {
@@ -80,7 +93,6 @@ nav .basket img {
     margin-top: 150px;
     color:white;
     font-size: 100px;
-    font-family: "YesevaOneRegular";
     font-weight: 700;
 }
 
@@ -100,7 +112,7 @@ nav .basket img {
     border: solid 0.5px;
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.8s;
 }
 
@@ -115,7 +127,6 @@ nav .basket img {
     min-height: calc(100vh - 60px);
     padding-top: 60px;
     background: url(/images/bg/about_bg.png) center/cover no-repeat;
-    font-family: "YesevaOneRegular";
 }
 
 .advantages_info {
@@ -126,23 +137,19 @@ nav .basket img {
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 20px;
-    font-family: "YesevaOneRegular";
 }
 
 .advantages_item {
     text-align: center;
     padding-top: 60px;
-    font-family: "YesevaOneRegular";
 }
 
 .advantages_item_title {
-    font-size: 22px;
-    font-family: "YesevaOneRegular";
+    font-size: 25px;
 }
 
 .advantages_item_text {
-    font-size: 15px;
-    font-family: "YesevaOneRegular";
+    font-size: 18px;
 }
 
 .advantages_info_btn {
@@ -162,7 +169,7 @@ nav .basket img {
     border: solid 0.5px;
     width: 200px;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.8s;
 }
 
@@ -190,7 +197,7 @@ nav .basket img {
     border-radius: 32px;
     width: 150px;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
     margin-right: auto;
@@ -210,12 +217,12 @@ nav .basket img {
 }
 
 .catalog_item_title {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 
 .catalog_item_price {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -254,14 +261,33 @@ nav .basket img {
     padding-top: 90px;
     background: url(/images/bg/about_bg.png) center/cover no-repeat;
     min-height: 100vh;
+    text-align: center;
 }
 
 .about_info_title {
-    text-align: center;
     font-size: 33px;
     font-weight: 700;
-    font-family: "YesevaOneRegular";
 }
+
+.about_main_activity_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about_main_activity {
+    font-size: 25px;
+}
+
+.about_location_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about_location_info {
+    font-size: 25px;
+}
+
+
 
 
 
@@ -345,6 +371,26 @@ input[type="number"]:focus {
     .catalog_item .button {
         width: 12%;
     }
+
+    .about_info_title {
+        font-size: 29px;
+    }
+
+    .about_main_activity_title {
+        font-size: 25px;
+    }
+    
+    .about_main_activity {
+        font-size: 20px;
+    }
+
+    .about_location_title {
+        font-size: 25px;
+    }
+    
+    .about_location_info {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -359,6 +405,14 @@ input[type="number"]:focus {
 
     .catalog_item .button {
         width: 8%;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    nav .dropdown {
+        display: flex;
     }
 }
 
@@ -405,5 +459,25 @@ input[type="number"]:focus {
     .catalog_item .button {
         margin-left: 110px;
         width: 10%;
+    }
+
+    .about_info_title {
+        font-size: 22px;
+    }
+
+    .about_main_activity_title {
+        font-size: 20px;
+    }
+
+    .about_main_activity {
+        font-size: 18px;
+    }
+
+    .about_location_title {
+        font-size: 20px;
+    }
+
+    .about_location_info {
+        font-size: 18px;
     }
 }

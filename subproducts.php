@@ -39,6 +39,20 @@
             <div class="container">
                 <div class="menu">
                     <div class="logo">MTK</div>
+
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Меню
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.php">Главная</a></li>
+                            <li><a class="dropdown-item" href="fruits.php">Каталог</a></li>
+                            <li><a class="dropdown-item" href="about.php">О нас</a></li>
+                            <li><a class="dropdown-item" href="contacts.php">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
                     <ul class="links">
                         <li><a href="index.php">Главная</a></li>
                         <li><a href="fruits.php">Каталог</a></li>
@@ -77,7 +91,6 @@
                         <a href="subproducts.php">Субпродукты</a>
                     </div>
                     <hr>
-                </div>
 
                 <!-- Код карточки товара -->
 
@@ -132,6 +145,7 @@
                 <?php endwhile; ?>
             
             </div>
+        </div>
         </div>
     </div>
     </section>

@@ -18,18 +18,35 @@
             <div class="container">
                 <div class="menu">
                     <div class="logo">MTK</div>
+
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Меню
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.php">Главная</a></li>
+                            <li><a class="dropdown-item" href="fruits.php">Каталог</a></li>
+                            <li><a class="dropdown-item" href="about.php">О нас</a></li>
+                            <li><a class="dropdown-item" href="contacts.php">Контакты</a></li>
+                        </ul>
+                    </div>
+
                     <ul class="links">
                         <li><a href="index.php">Главная</a></li>
                         <li><a href="fruits.php">Каталог</a></li>
                         <li><a href="about.php">О нас</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="contacts.php">Контакты</a></li>
                     </ul>
+
                     <div class="basket">
                         <a href=""><img src="images/icons/basket.png" alt=""></a>
                     </div>
+
                     <div class="toggle_btn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
                 </div>
             </div>
         </nav>
@@ -44,7 +61,16 @@
                     <div class="about_info_title">OOO " MTK " - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МТК"</div>
                     <hr>
 
-                    <div class="about_main_activity">Наша компания занимается торговлей мясом, субпродуктов, овощей и фруктов.</div>
+                    <div class="about_main_activity_title">Основной вид деятельности компании</div>
+                    <div class="about_main_activity">Основным видом деятельности является торговля оптовая мясом и мясом птицы,
+                         включая субпродукты, всего зарегистрировано 29 видов деятельности по ОКВЭД.</div>
+                         <br><hr>
+
+
+                    <div class="about_location_title">Местоположение</div>
+                    <div class="about_location_info">Компания находится по адресу : Ростовская обл., Аксайский район, г. Аксай,
+                         ул. Шолохова, д. 3 литера М ком. 27</div><br>
+                         <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mtk/230023184418/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МТК</a><a href="https://yandex.ru/maps/11031/aksay/category/food_raw_materials/184106778/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пищевое сырьё в Аксае</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.859816%2C47.273980&mode=poi&poi%5Bpoint%5D=39.859728%2C47.273923&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D230023184418&z=21" width="1000" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
                     <div class="about_info_text">
                         <p></p>
