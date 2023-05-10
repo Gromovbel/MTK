@@ -1,3 +1,21 @@
+<?php
+
+$mysqli = new mysqli('localhost' , 'root' , '' , 'mtk');  // ( ‘хост’ , ‘имя пользователя’ , ‘пароль’  , ‘название базы данных’)
+
+    if(mysqli_connect_errno()) {
+
+    prinf("Соединение не установленно " , mysqli_connect_error());
+
+    exit();
+
+    }
+
+    $mysqli->set_charset('utf8mb4');
+
+    $mysqli -> close();
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,28 +70,40 @@
         </nav>
     </header>
 
-    <!-- Section about -->
+    <!-- Section contacts -->
 
-    <section class="about">
+    <section class="contacts">
         <div class="container">
             <div class="row">
-                <div class="about_info">
-                    <div class="about_info_title">OOO " MTK " - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МТК"</div>
-                    <hr>
 
-                    <div class="about_main_activity_title">Основной вид деятельности компании</div>
-                    <div class="about_main_activity">Основным видом деятельности является торговля оптовая мясом и мясом птицы,
-                         включая субпродукты, всего зарегистрировано 29 видов деятельности по ОКВЭД.</div>
-                         <br><hr>
+                <div class="contacts_title"> <h1> Наши контакты</h1></div>
+                <hr><br>
 
+                <div class="contacts_feedback">
+                    <div class="contacts_feedback_title">Здесь вы можете оставить свой отзыв о нашем сайте. Необходимо заполнить все
+                        пустые поля.
+                    </div>
 
-                    <div class="about_location_title">Местоположение</div>
-                    <div class="about_location_info">Компания находится по адресу : Ростовская обл., Аксайский район, г. Аксай,
-                         ул. Шолохова, д. 3 литера М ком. 27</div><br>
-                         <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mtk/230023184418/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МТК</a><a href="https://yandex.ru/maps/11031/aksay/category/food_raw_materials/184106778/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пищевое сырьё в Аксае</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.859816%2C47.273980&mode=poi&poi%5Bpoint%5D=39.859728%2C47.273923&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D230023184418&z=21" width="1000" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <form class="decor" action = "post.php" method = "post">
+                        <div class="form-left-decoration"></div>
+                        <div class="form-right-decoration"></div>
+                        <div class="circle"></div>
+                        <div class="form-inner">
+                            <h3>Оставить отзыв</h3>
+                            <input type="text" name="name" required placeholder="Ваше имя">
+                            <input type="email" name="email" required placeholder="Ваш Email">
+                            <textarea placeholder="Отзыв" required name="feedback" rows="3"></textarea>
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
 
-                    <div class="about_info_text">
-                        <p></p>
+                <div class="contacts_links">
+                    <div class="contacts_links_title"></div>
+
+                    <div class="contacts_liks_block">
+                        <div class="contacts_links_phone"></div>
+                        <div class="contacts_links_email"></div>
                     </div>
                 </div>
                 
