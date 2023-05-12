@@ -35,7 +35,7 @@ $mysqli = new mysqli('localhost' , 'root' , '' , 'mtk');  // ( ‘хост’ , 
         <nav>
             <div class="container">
                 <div class="menu">
-                    <div class="logo">MTK</div>
+                    <div class="logo"><a href="index.php"><img src="/images/icons/icon.png" alt=""></a></div>
 
                     <div class="dropdown">
                         <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -98,15 +98,25 @@ $mysqli = new mysqli('localhost' , 'root' , '' , 'mtk');  // ( ‘хост’ , 
                     </form>
                 </div>
 
-                <div class="contacts_links">
-                    <div class="contacts_links_title"></div>
+                    <div class="contacts_links_title"><h1>Обратная связь</h1></div>
+                    <hr><br>    
 
-                    <div class="contacts_liks_block">
-                        <div class="contacts_links_phone"></div>
-                        <div class="contacts_links_email"></div>
-                    </div>
-                </div>
-                
+                        <div class="contacts_links_item col-12 col-md-6">
+                            <h2>Номер телефона: <a href="tel: +78008008080">+7 (800) 800-80-80</a></h2>
+                        </div>
+
+                        <div class="contacts_links_item col-12 col-md-6">
+                            <h2>Наша почта: <a href="mailto: supportmtk@mail.ru">supportmtk@mail.ru </a></h2>
+                        </div>
+
+                        <div class="contacts_links_item col-12 col-md-6">
+                            <h2>Мы в WhatsApp: <a href="https://wa.me/78008008080"><img src="/images/icons/whatsapp.png" alt=""> </a></h2>
+                        </div>
+
+                        <div class="contacts_links_item col-12 col-md-6">
+                            <h2>Мы в Telegram: <a href="https://t.me/MTK"><img src="/images/icons/tg.png" alt=""> </a></h2>
+                        </div>
+                         
             </div>
         </div>
     </section>

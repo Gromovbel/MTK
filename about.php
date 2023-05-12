@@ -17,7 +17,7 @@
         <nav>
             <div class="container">
                 <div class="menu">
-                    <div class="logo">MTK</div>
+                    <div class="logo"><a href="index.php"><img src="/images/icons/icon.png" alt=""></a></div>
 
                     <div class="dropdown">
                         <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
