@@ -59,9 +59,7 @@
                         <li><a href="about.php">О нас</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>
-                    <div class="basket">
-                        <a href=""><img src="images/icons/basket.png" alt=""></a>
-                    </div>
+                    <button class="openBasket"><img src="/images/icons/basket.png" alt=""></button>
                     <div class="toggle_btn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
@@ -93,6 +91,12 @@
                     <hr>
 
                 <!-- Код карточки товара -->
+                <div class="catalog_item_type_block">
+                    <div class="catalog_item_type_title">
+                        <h2>Курица</h2>
+                    </div>
+                    <hr>
+                </div>
 
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
                     <?php $type_meat = $row['type_meat']; ?>
@@ -149,6 +153,8 @@
         </div>
     </div>
     </section>
+
+    <div class="go-top"><img src="/images/icons/go-top.png" alt=""></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

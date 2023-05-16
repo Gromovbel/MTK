@@ -59,9 +59,7 @@
                         <li><a href="about.php">О нас</a></li>
                         <li><a href="contacts.php">Контакты</a></li>
                     </ul>
-                    <div class="basket">
-                        <a href=""><img src="images/icons/basket.png" alt=""></a>
-                    </div>
+                    <button class="openBasket"><img src="/images/icons/basket.png" alt=""></button>
                     <div class="toggle_btn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
