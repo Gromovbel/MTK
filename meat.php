@@ -58,7 +58,10 @@
                         <li><a href="about.php">О нас</a></li>
                         <li><a href="contacts.php">Контакты</a></li>
                     </ul>
-                    <button class="openBasket"><img src="/images/icons/basket.png" alt=""></button>
+                    <button class="cart" id="cart">
+                        <img class="cart_image" src="/images/icons/basket.png" alt="Cart" />
+                        <div class="cart_num" id="cart_num">0</div>
+                    </button>
                     <div class="toggle_btn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
@@ -96,6 +99,46 @@
                     <hr>
                 </div>
 
+                
+    <!-- Корзина -->
+
+    <div class="basket">
+        <div class="basket_container">
+            <div class="basket_title">Корзина</div><hr>
+            <div class="basket_block">
+                <div class="basket_item">
+                    <div class="basket_wrap">
+                        <div class="basket_item_img">
+                            <img src="apples.png" alt="">
+                        </div>
+    
+                        <div class="basket_item_name">
+                            Яблоко
+                        </div>
+                    </div>
+
+                    <div class="basket_wrap">
+                        <div class="basket_item_price">
+                            100
+                        </div>
+
+                        <div class="basket_item_quantity">
+                            1
+                        </div>
+    
+                        <button class="basket_item_delete">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div><hr>
+
+            <div class="basket_block"><output class="end_price">0</output></div>
+
+            <div class="basket_close"><button class="basket_close_btn">X</button></div>
+        </div>
+    </div>
+
                 <!-- Код карточки товара -->
 
                 <?php while ($row = mysqli_fetch_assoc($query)): ?>
@@ -108,13 +151,13 @@
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
-                                    <div class="counter__button counter__button_minus">-</div>
-                                    <div class="counter__input"><input type="number" placeholder="0"></div>
-                                    <div class="counter__button counter__button_plus">+</div>
-                                </div>
-                                    <div class="button col-md-4"><a href="#"><img src="/images/icons/basket.png" alt=""></a></div>
-                                </div>  
+                        <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
+                            <div class="counter__button counter__button_minus">-</div>
+                            <div class="counter__input"><input type="number" placeholder="0" class="counter_value"></div>
+                            <div class="counter__button counter__button_plus">+</div>
+                        </div>
+                            <button class="cart_add"><a href="#"><img src="/images/icons/basket.png" alt=""></a></button>
+                        </div> 
                         </div>
                     <?php endif; ?>
                 <?php endwhile; ?>
@@ -138,13 +181,13 @@
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
-                                    <div class="counter__button counter__button_minus">-</div>
-                                    <div class="counter__input"><input type="number" placeholder="0"></div>
-                                    <div class="counter__button counter__button_plus">+</div>
-                                </div>
-                                    <div class="button col-md-4"><a href="#"><img src="/images/icons/basket.png" alt=""></a></div>
-                                </div>  
+                        <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
+                            <div class="counter__button counter__button_minus">-</div>
+                            <div class="counter__input"><input type="number" placeholder="0" class="counter_value"></div>
+                            <div class="counter__button counter__button_plus">+</div>
+                        </div>
+                            <button class="cart_add"><a href="#"><img src="/images/icons/basket.png" alt=""></a></button>
+                        </div> 
                         </div>
                     <?php endif; ?>
                 <?php endwhile; ?>
@@ -168,13 +211,13 @@
                                 <img src="<?=$row['img']?>">
                             </div>
                             <div class="catalog_block">
-                                <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
-                                    <div class="counter__button counter__button_minus">-</div>
-                                    <div class="counter__input"><input type="number" placeholder="0"></div>
-                                    <div class="counter__button counter__button_plus">+</div>
-                                </div>
-                                    <div class="button col-md-4"><a href="#"><img src="/images/icons/basket.png" alt=""></a></div>
-                                </div>  
+                        <div class="counter col-md-2 offset-md-3 col-sm-1 offset-sm-4 col-1 offset-4" data-counter>
+                            <div class="counter__button counter__button_minus">-</div>
+                            <div class="counter__input"><input type="number" placeholder="0" class="counter_value"></div>
+                            <div class="counter__button counter__button_plus">+</div>
+                        </div>
+                            <button class="cart_add"><a href="#"><img src="/images/icons/basket.png" alt=""></a></button>
+                        </div> 
                         </div>
                     <?php endif; ?>
                 <?php endwhile; ?>

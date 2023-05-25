@@ -71,42 +71,63 @@
         </nav>
     </header>
 
+    
+
     <!-- Корзина -->
 
     <div class="basket">
         <div class="basket_container">
             <div class="basket_title">Корзина</div><hr>
+            <div class="basket_column_names">
+                <div class="basket_column_names_wrap">
+                    <div class="basket_column_img basket_column">Картинка</div>
+                    <div class="basket_column_name basket_column">Название</div>
+                    <div class="basket_column_quantity basket_column">Количество</div>
+                    <div class="basket_column_quantity_2 basket_column">Кол-во</div>
+                </div>
+
+                <div class="basket_column_names_wrap">
+                    <div class="basket_column_price basket_column">Стоимость</div>
+                    <div class="basket_column_delete basket_column"></div>
+                </div>
+
+            </div>
             <div class="basket_block">
                 <div class="basket_item">
-
-                    <div class="basket_item_img">
-                        <!-- <img src="/images/img/apples.png" alt=""> -->
+                    <div class="basket_wrap">
+                        <div class="basket_item_img basket_item_column">
+                            <img src="apples.png" alt="">
+                        </div>
+    
+                        <div class="basket_item_name basket_item_column">
+                            Яблоко
+                        </div>
                     </div>
 
-                    <div class="basket_item_name">
-                        <!-- Яблоко -->
-                    </div>
+                    <div class="basket_wrap">
+                        <div class="basket_item_price basket_item_column">
+                            100
+                        </div>
 
-                    <div class="basket_item_quantity">
-                        <!-- 1 -->
+                        <div class="basket_item_quantity basket_item_column">
+                            1
+                        </div>
+    
+                        <button class="basket_item_delete basket_item_column">
+                            &#10006;
+                        </button>
                     </div>
-                    
-                    <div class="basket_item_price">
-                        <!-- 100 -->
-                    </div>
-
-                    <button class="basket_item_delete">
-                        Х
-                    </button>
                 </div>
             </div><hr>
 
-            <div class="basket_block"><div class="end_price"></div></div>
+            <div class="basket_wrap_checkout">
+            <div class="basket_block basket_end_price">Итого :<output class="end_price"></output></div>
+            <button class="basket_checkout">Оформить заказ</button>
+            </div>
 
             <div class="basket_close"><button class="basket_close_btn">X</button></div>
         </div>
     </div>
-
     
 
     <!-- Section catalog -->
