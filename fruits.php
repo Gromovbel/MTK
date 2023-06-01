@@ -92,7 +92,7 @@
                 </div>
 
             </div>
-            <div class="basket_block">
+            <div class="basket_block" style="max-height: 600px; overflow-y: scroll;">
                 <div class="basket_item">
                     <div class="basket_wrap">
                         <div class="basket_item_img basket_item_column">
@@ -121,15 +121,46 @@
             </div><hr>
 
             <div class="basket_wrap_checkout">
-            <div class="basket_block basket_end_price">Итого :<output class="end_price"></output></div>
-            <button class="basket_checkout">Оформить заказ</button>
+                <div class="basket_block basket_end_price">Итого :<output class="end_price"></output></div>
+                <button class="basket_checkout">Оформить заказ</button>
             </div>
 
             <div class="basket_close"><button class="basket_close_btn">X</button></div>
+
+                <!-- Форма оформления заказа -->
+
+            <form class="decor decor_request" action = "send.php" method = "post" style="display:none;">
+                <div class="form-left-decoration"></div>
+                <div class="form-right-decoration"></div>
+                <div class="circle"></div>
+                <div class="form-inner">
+                    <h3>Заполните поля</h3>
+                    <input type="text" name="fio" required placeholder="Ваше ФИО">
+                    <input type="email" name="email" required placeholder="Ваш Email">
+                    <textarea required placeholder="В какое время вам позвонить?" name="time" rows="2"></textarea>
+                    <input class="basket_input" type="submit" value="Отправить">
+                    <button class="close_form">Вернуться к заказу</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="agree_block">
+        <div class="agree_container">
+            <div class="agree_title">Согласие на обработку персональных данных</div><hr>
+            <div id="some_id">
+                <?php echo file_get_contents('agree.txt') ?>
+            </div>
+            <hr>
+            <div class="agree_buttons">
+                <button class="agree_btn agree_true">Согласен</button>
+                <button class="agree_btn agree_false">Не согласен</button>
+            </div>
+            <div class="agree_close"><button class="agree_close_btn">X</button></div>
         </div>
     </div>
     
-
     <!-- Section catalog -->
     <section class="catalog">
         <div class="container"> 

@@ -119,15 +119,14 @@ nav .dropdown .btn:focus{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.33); /* Небольшое затемнение на фоне */
-    z-index: 1000; /* Поверх всех окон */
+    background-color: rgba(0, 0, 0, 0.33);
+    z-index: 3;
     width: 100%;
     height: 100%;
-    display: none; /* По умолчанию скрываем окно */
+    display: none;
     justify-content: center;
     align-items: center;
     user-select: none;
-    overflow-y: scroll;
   }
   
   .basket_title {
@@ -143,6 +142,7 @@ nav .dropdown .btn:focus{
     min-height: 300px;
     padding: 10px 25px 10px 25px;
   }
+
 
   .basket_item {
     display: flex;
@@ -269,6 +269,69 @@ nav .dropdown .btn:focus{
     height: 50px;
     width: 200px;
     font-size: 20px;
+  }
+
+  /* Agree block */
+
+  .agree_block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    z-index: 4;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow-y: scroll;
+  }
+
+  .agree_container {
+    margin: 0 auto;
+    position: absolute;
+    background-color:white;
+    max-width: 800px;
+    max-height: 800px;
+    padding: 10px 25px 10px 25px;
+    overflow-y: scroll;
+  }
+
+  .agree_title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .agree_close_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #d62240;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    border:none;
+    background-color:white;
+  }
+
+  .agree_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .agree_btn {
+    background-color: greenyellow;
+    border-radius: 32px;
+    border: solid 0.5px;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .agree_false {
+    background-color: red;
   }
 
 /* Section promo */
@@ -613,6 +676,18 @@ nav .dropdown .btn:focus{
     color: #707981;
  }
 
+ .close_form {
+    width: 100%;
+    background-color:#f69a73;;
+    height: 40px;
+    border-width:0;
+    border-radius:20px;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+ }
+
  /* Кнопка go-top */
 
  .go-top {
@@ -698,6 +773,56 @@ input[type="number"]:focus {
 	border: none;
 	text-align: center;
   }
+
+
+/* Админ меню */
+
+.admin_menu {
+    padding-top: 90px;
+}
+
+.admin_menu .container {
+    max-width: 1500px;
+}
+
+.admin_nav form {
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+}
+
+.admin_nav form input {
+    background: rgba(0, 0, 0, 0);
+    border:none;
+    font-size: 25px;
+}
+
+.admin_menu table {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#73e773,greenyellow);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.admin_menu th {
+    padding-right: 25px;
+}
+
+.admin_menu .form_add {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.admin_table_title {
+    text-align: center;
+}
+
+.login_form {
+    margin: 30vh auto 0;
+}
 
 /* Media */
 

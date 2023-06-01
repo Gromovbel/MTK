@@ -85,6 +85,16 @@ goTopBtn.addEventListener('click', () => {
 const openBasket = document.querySelector('.cart');
 const basket = document.querySelector('.basket');
 const closeBasket = document.querySelector('.basket_close');
+const openForm = document.querySelector('.agree_true');
+const requestForm = document.querySelector(".decor_request");
+const closeForm = document.querySelector('.close_form');
+const basketBlock = document.querySelector('.basket_block');
+const clearBasket = document.querySelector('.basket_input');
+const closeAgree = document.querySelector('.agree_close');
+const closeAgreeBtn = document.querySelector('.agree_false');
+const agree = document.querySelector('.agree_block');
+const openAgree = document.querySelector('.basket_checkout');
+
 
 //Открытие корзины
 
@@ -101,6 +111,45 @@ closeBasket.onclick = function () {
 	basket.style.display = 'none';
 	body.classList.remove("lock");
 }
+
+//Открытие соглашения
+
+openAgree.onclick = function () {
+	agree.style.display = 'flex';
+	basket.style.display = 'none';
+}
+
+//Закрытие соглашения
+
+closeAgree.onclick = function () {
+	agree.style.display = 'none';
+	basket.style.display = 'flex';
+}
+
+closeAgreeBtn.onclick = function () {
+	agree.style.display = 'none';
+	basket.style.display = 'flex';
+}
+
+//Открытие формы заказа
+
+openForm.onclick = function () {
+	agree.style.display = 'none';
+	basket.style.display = 'flex';
+	basketBlock.style.display = 'none';
+	requestForm.style = 'flex';
+}
+
+//Закрытие формы заказа
+
+closeForm.onclick = function () {
+	requestForm.style.display = 'none';
+	basketBlock.style.display = 'block';
+}
+
+
+
+
 
 const cart = document.querySelector('.cart');
 const cartNum = document.querySelector('.cart_num');
@@ -245,3 +294,8 @@ myCart.products = cardAddArr.forEach((cardAdd) => {
   
 	endPrice.value = toCurrency(myCart.cost);
   }
+
+  clearBasket.onclick =  function () {
+    document.querySelector('.basket_item').innerHTML = '';
+	localStorage.clear();
+}
